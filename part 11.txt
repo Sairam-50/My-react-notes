@@ -1,0 +1,24 @@
+import React from "react"
+
+export default function App() {
+  
+    const [count, setCount] = React.useState(0)
+    
+    return (
+        <div className="counter">
+            <button className="counter--minus">–</button>
+            <div className="counter--count">
+                <h1>0</h1>
+            </div>
+            <button className="counter--plus">+</button>
+        </div>
+    )
+}
+
+In this code snippet see 
+ const [count, setCount] = React.useState(0)
+
+ this is how u use useState hook in react
+ It returns an array with 2 elements 
+    1st element is the value of the state variable
+    2nd element is the function to update the state variable (setter function)

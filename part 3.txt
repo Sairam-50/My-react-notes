@@ -1,0 +1,12 @@
+try to add your stylings in rem or relative units rather than abosolute units like px or pt.
+
+ <h1>It is currently about {date.getHours() % 12} o'clock!</h1>
+ In jsx anything in curly braces is evaluated as javascript. So you can use any javascript expression in there.
+
+  const date = new Date()
+    const hours = date.getHours() % 12
+    
+    return (
+        <h1>It is currently about {hours} o'clock!</h1>
+    )
+Basically you can insert any js object in the braces

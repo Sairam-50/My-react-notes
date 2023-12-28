@@ -1,0 +1,6 @@
+Warning: Each child in a list should have a unique "key" prop. Check the render method of `App`. See https://reactjs.org/link/warning-keys for more information. at Card (exe1.bundle.js:194:29) at App
+
+when you come across this error, it means that you have to add a key to the component that you are rendering in the map function.
+
+so in the example above, you have to add a key to the Card component like this:
+key={item.id}  the item.id must be unique 

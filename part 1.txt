@@ -1,0 +1,24 @@
+ReactDOM.render()  : this renders stuff like html. it has 2 arguments, the first is what you want to render, the second is where you want to render it.
+
+Eg; ReactDOM.render(
+    <ul><li>Thing 1</li><li>Thing 2</li></ul>,
+    document.getElementById("root")
+);
+
+
+
+Declarative style
+ReactDOM.render(<h1 className="header">Hello, React!</h1>, document.getElementById("root"))
+The same code when written in vanilla JS would be:
+
+Impaerative style
+const rootElement = document.getElementById("root");
+const headingElement = document.createElement("h1");
+headingElement.textContent = "Hello, React!";
+headingElement.className = "header";
+rootElement.appendChild(headingElement);
+
+whenever you write jsx, an object is returned.
+
+
+if you are using babel standalone from cdn for react you can easily deploy them on netlify or github pages. but if you are using create-react-app, you need to use netlify cli to deploy them on netlify.
