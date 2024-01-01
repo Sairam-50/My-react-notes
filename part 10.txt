@@ -1,3 +1,7 @@
+                State
+
+
+
 1. How would you describe the concept of "state"?
 A way for React to remember saved values from within a component.
 This is similar to declaring variables from within a component,
